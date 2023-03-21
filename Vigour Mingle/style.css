@@ -1,0 +1,1388 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Ubuntu&display=swap');
+/* homepage */
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color:#e6e6e6;
+}
+/* Nav bar */
+.nav{
+    font-size: 20px; 
+    background:#26305a;
+    width: 100%;
+    height: 11vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+} 
+#navbar ul li{
+    float: left;
+    list-style: none; 
+    margin:30px 30px; 
+}
+#navbar ul li a{ 
+    color:white;
+    opacity: 1;
+    text-decoration: none;
+}
+.hm{
+  display: none;
+}
+.VM{
+    width: 100%;
+    margin-left:-28%;
+    display: flex;
+    /* border:1px solid black; */
+}
+.logonb{
+  width: 5%;
+  height: auto;
+  float: left;
+  margin-left: 2%;
+  /* top: 3%;
+  left: 1%; */
+}
+.btn{
+  width: 28vh;
+  height:11vh;
+}
+.bay{
+  margin-left:28%;
+  justify-content: space-between;
+}
+.au:hover{
+  color:white;
+  opacity: 1;
+  cursor: pointer;
+  text-shadow: 0px 0px 0px #F3EFE0;
+  transition: 0.2s;
+  box-shadow: 0 -2px 0px white inset;
+}
+.au{
+  font-size: 20px;
+}
+.workout, .healthy{
+  float: left;
+  overflow: hidden;
+ background-color:#26305a;
+  
+}
+.workout, .healthy, .btn{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 12px 16px; */
+  background-color: inherit; 
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+} 
+.content{
+  margin-top:0%;
+  margin-left:1.5%;
+  display: none;
+  position: absolute;
+  background-color:#26305a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.content a{
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 17px;
+}
+.main{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  z-index:1;
+}
+input{
+  border: 3px solid #26305a;
+  height: 40px;
+  width: 250px;
+  border-radius: 50px;
+  padding: 0px 10px;
+  opacity: 1;
+}
+input:hover{
+  opacity:0.95;
+  cursor: pointer;
+  transition:0.3s ease;
+}
+.bar{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #26305a;
+  color: white;
+  font-size: 17px;
+  border:none;
+  opacity:0.9;
+  /* border-radius: 50px; */
+}
+.bar:hover{
+  opacity: 1;
+  cursor: pointer;
+  transition:0.3s ease;
+}
+/* inside the dropdown */
+/* Add background color to dropdown links on hover */
+.content a:hover{
+  cursor: pointer;
+  background-color:white;
+  color:#26305a;
+  margin-left: 0;
+  transition: 0.3s;
+}
+/* Show the dropdown menu on hover */
+.workout:hover .content {
+  display: block;
+}
+.healthy:hover .content{
+  display: block;
+}
+
+/* BANNER Section*/
+/* text overlay */
+.banwo{
+  position: relative;
+}       
+.sr1{
+  color: white;
+  text-shadow:1px 1px 5px gray;
+  font-size: 30px;
+  position: absolute; 
+  margin-top: 3%;
+  /* text-align: center; */
+  /* border:1px solid white; */
+  margin-left:15%;
+}
+.banyg{
+  position: relative;
+}
+.sr2{
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+  font-size: 35px;
+  position: absolute; 
+  margin-top: 6%;
+  /* text-align: center; */
+  /* border:1px solid white; */
+  margin-left:33%;
+}
+.banwell{
+  position: relative;
+}
+.sr3{
+  color:white;
+  text-shadow: 2px 2px 5px gray;
+  font-size: 31px;
+  position: absolute; 
+  margin-top: 6.5%;
+  /* text-align: center; */
+  /* border:1px solid white; */
+  margin-left:64%;
+}
+.bandiet{
+  position: relative;
+}
+.sr4{
+  color:white;
+  text-shadow: 2px 2px 5px gray;
+  font-size: 32px;
+  position: absolute; 
+  margin-top: 6.5%;
+  /* text-align: center; */
+  /* border:1px solid white; */
+  margin-left:77%;
+}
+.imgslider{
+  /*200(each image)*4(total images)=800*/
+  width: 816vh;
+  height: 120vh;
+  position: relative;
+  animation: imgslider 8s infinite ease;
+}
+img.slider{
+  width:204vh;
+  height: 120vh;
+  /*remove spacing between images*/
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.ban{
+  width: 100%;
+  height:100vh;	
+  overflow: hidden;
+}
+@keyframes imgslider{
+  0%{
+    left: 0%;
+  }
+  25%{
+    left: -204vh;
+  }
+  50%{
+    left: -408vh;
+  }
+  75%{
+    left: -612vh;
+  }
+}
+/* four pic section */
+.wo, .yg, .well, .diet{
+  width: 45%;
+  height: 80vh;
+}
+.vd{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wo, .well{
+  margin-left: 4%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  /* border: 2px solid #26305a; */
+}
+.yg, .diet{
+  margin-left: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  /* border: 2px solid #26305a; */
+}
+.wo:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px gray;
+}
+.well:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px gray;
+}
+.yg:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px gray;
+}
+.diet:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px gray;
+}
+.wo, .yg{
+  margin-bottom: 0%;
+}
+.wo{
+  background-image: url(image/homepage_workout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.yg{
+  background-image: url(image/homepage_yoga2.jpg);
+  background-size: cover;
+  background-position: right top;
+}
+.well{
+  background-image: url(image/homepage_wellness2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.diet{
+  background-image: url(image/homepage_diet2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+} 
+.cap1, .cap2, .cap3, .cap4{
+  font-size: 22px;
+  color:#e6e6e6;
+  width: 30%;
+  height: 6vh;
+  margin-top: 3%;
+  margin-left: 34%;
+  padding-top: 1.5%;
+  background-color:#26305a;
+  text-align:center;
+  box-shadow: 1px 1px 2px black;
+  text-decoration: underline;
+}
+.cap, .capp, .cappp, .capppp{
+  border:3px solid #26305a;
+  font-size:18px;
+  color:#26305a;
+  width:100%;
+  height:10vh;
+  /*ma bottom: 0; */
+  position: relative;
+  margin-top:70%;
+  margin-left:0%;
+  padding-top: 1.5%;
+  background-color:#e6e6e6;
+  text-align:center;
+}
+
+/* feedback section */
+
+/* .fb{
+  text-align: center; 
+ display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+} 
+.feedb{
+  text-align: center; 
+  font-size: 5vh;
+  border: none;
+}
+.one, .two, .three, .four{
+  padding: 2% 2% 2% 2%;
+  font-size: 16px;
+  background:#35437e;
+  color:white;
+  border-radius: 13%;
+  text-align: justify;
+  width:20%;
+  height: 32vh;
+  padding: 0 1.5%;
+  padding-top: 2%;
+}
+.one:hover, .two:hover, .three:hover, .four:hover{
+  cursor:pointer;
+  background:white;
+  color:#35437e;
+  border: 5px solid #35437e;
+  transform: scale(o.5,1);
+}
+
+.i1{
+  margin-right: 94%;
+  position: absolute;
+  margin-top: -1%;
+  color: #26305a;
+  font-size: 30px;
+}
+.i2{
+  margin-right: 46%;
+  position: absolute;
+  margin-top: -1%;
+  font-size: 30px;
+  color: #26305a;
+}
+.i3{
+  margin-right: -2%;
+  position: absolute;
+  margin-top: -1%;
+  color: #26305a;
+  font-size: 30px;
+}
+.i4{
+  margin-left: 50%;
+  position: absolute;
+  margin-top: -1%;
+  color: #26305a;
+  font-size: 30px;
+}
+.user1{
+  padding-top: 30%;
+  z-index: 2;
+  color: white;
+} */
+
+
+#fb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.fback{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fback h1{
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #26305a;
+  color: #ffffff;
+  padding: 20px 20px;
+}
+
+.fback span{
+  font-size: 20px;
+  color: #26305a;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.fback-box-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:90%;
+}
+
+.fback-box{
+  width:40%;
+  height:40vh;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 5%;
+  margin: 3%;
+  cursor: pointer;
+}
+
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #26305a;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #26305a;
+  font-size: 11px;
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Feedback p{
+font-size: 17px;
+}
+
+/* Footer section */
+.footer-container{
+  width: 100%;
+  height: 35vh;
+  background-color: #26305a;
+  padding-bottom: 4rem 0 2rem 0;
+  position: relative;
+  /* float: left; */
+  margin-top:3%;
+}
+
+.logoft{
+  height: 30vh;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 1%;
+  /* border:1px solid black; */
+}
+.footer{
+  border: 1px solid black;
+  border: none;
+  width: 50%;
+  height: 20vh;
+  background-color:#26305a;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 30%;
+  padding-top: 5%;
+  margin-top: 0;
+  font-size: 17px;
+  position: absolute;
+}
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 1.5rem;
+}
+.footer-heading a {
+  color:#e6e6e6;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+.footer-heading a:hover{
+  opacity: 1;
+  color:white;
+  transition: 0.3s ease-out;
+  text-shadow: 1px 1px 2px black;
+  transition: 0.3s;
+}
+.socialmedia a{
+  padding-left: 8%;
+  color: white;
+  text-decoration: none;
+  /* justify-content:space-between; */
+  /* padding:5% 5%; */
+}
+.socialmedia a:hover{
+  color:white;
+}
+.socialmedia{
+  display: flex;
+}
+.copy{
+  color:white;
+  width: 15%;
+  margin-left: 85%;
+  padding-top:13%;
+  position:absolute;
+  /* border: 1px solid black; */
+}
+.cl{
+  text-decoration:none;
+  color:white;
+  margin-left:95%;
+  margin-top:15%;
+  position: absolute;
+}
+.cl:hover{
+  text-decoration:underline;
+}
+/* @media all and (max-width:952px){
+  .logoft{
+    width: 27%;
+    height: auto;
+  }
+  .footer{
+    width: 30%;
+    height: 20vh;
+  }
+  .copy{
+    display:none;
+  }
+}
+@media all and (max-width:1250px){
+  #footer-3{
+    display:none;
+  }
+  .copy{
+    border:1px solid black;
+    width:15%;
+    margin-right:5%;
+    /* padding-right:5%; */
+  /* }
+  .logoft{
+    width: 25%;
+    height: auto;
+  }
+}
+
+@media all and (max-width:600px){
+  .logoft{
+    width: 27%;
+    height: auto;
+  }
+}
+ @media all and (max-width:1200px){
+  .logoft{
+    width: 26%;
+    height: 30vh;
+  }
+}  */ 
+
+
+/* About Us */
+.a{
+  font-size: 40px;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+.abtus{
+  /* border: 1px solid black; */
+  height: 100vh;
+  width: 100%;
+  padding-top: 10%;
+  background-image: url(./image/abtus/abtbn2.jpg);
+  background-size: cover;
+  color: white;
+  opacity:0.9;
+}
+.txt{
+  /* text-align: center; */
+  margin-top:4%;
+  width: 45%;
+  height: 40vh;
+  margin-left: 5%;
+  font-size: 20px;
+   /* padding-left: 50px; */
+  /* text-align: justify; */
+}
+.txt::first-letter{
+  font-size: 40px;
+}
+.wwa{
+  text-align: center;
+  padding-top: 5%;
+}
+.wwa h1{
+  margin-left:38%;
+  margin-bottom:5%;
+  padding-top:0.7%;
+  background-color: #26305a;
+  color: #ffffff;
+  width:25%;
+  height:8vh;
+  text-transform:uppercase;
+}
+.pic1,.pic2,.pic3,.pic4{
+  width: 15%;
+  height: 30vh;
+  border: 1px solid black;
+  border-radius: 50%;
+/* background-position: center; */
+background-size: cover;
+}
+.pic1{
+  background-image: url(./image/abtus/chun.jpg);
+}
+.pic2{
+  background-image: url(./image/abtus/chue.jpg);
+}
+.pic3{
+  background-image: url(./image/abtus/swee.jpg);
+}
+.pic4{
+  background-image: url(./image/abtus/shel.jpg);
+}
+.pic-section{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.parent{
+  display: flex;
+  margin-top: 2%;
+  text-align: center;
+  justify-content: space-around;
+  font-size:18px;
+}
+.cho{
+  margin-left: 0%;
+}
+.chue{
+  margin-left: 0%;
+}
+.shelly{
+  margin-left: 0%;
+}
+.akari{
+  margin-left: 0.5%;
+}
+/* #26305a, #ffffff, #35437e, #171d36, #e6e6e6  */
+
+
+/* Workout Videos */
+/* #div1{
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+} */
+.one1{ width: 100%;
+  height: 100vh; 
+  text-align: center;
+  border: 1px solid #ccc; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  background-image:url(./image/boys_workout/bannerpic.jpg);
+  background-blend-mode: darken;
+}
+.wo11{
+  margin-top:15%;
+  font-size:38px;
+  position:relative;
+  color:white;
+}
+.wo12{
+  margin-top:2%;
+  color:white;
+  font-size:22px;
+}
+.div2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9, .img1yg, .img2yg, .img3yg,.img4yg,.img5yg,.img6yg,.img7yg,.img8yg,.img9yg, .img1recipes,.img2recipes,.img3recipes,.img4recipes,.img5recipes,.img6recipes,.img7recipes,.img8recipes,.img9recipes, .img1well,.img2well,.img3well,.img4well,.img5well,.img6well,.img7well,.img8well,.img9well{
+  width:28%;
+  height: 45vh; 
+  text-align: center;
+  border: 1px solid black;
+  background-size: cover;
+}
+.img1, .img4, .img7{
+  margin-left:0.5%;
+}
+.img2, .img5, .img8{
+  margin-left:0.5%;
+}
+.img3, .img6, .img9{
+  margin-left:0.5%;
+}
+.img1, .img2, .img3{
+  margin-top:4%;
+}
+.img4, .img5, .img6{
+  margin-top:2%;
+  margin-bottom:1%;
+}
+.img7, .img8, .img9{
+  margin-top:2%;
+  margin-bottom:0%;
+}
+.img1{
+  background-image:url(./image/boys_workout/1.png);
+}
+.img2{
+  background-image:url(./image/boys_workout/2.png);
+}
+.img3{
+  background-image:url(./image/boys_workout/3.png);
+}
+.img4{
+  background-image:url(./image/boys_workout/4.png);
+}
+.img5{
+  background-image:url(./image/girls_workout/1.jpg);
+}
+.img6{
+  background-image:url(./image/girls_workout/2.jpg);
+}
+.img7{
+  background-image:url(./image/girls_workout/3.jpg);
+}
+.img8{
+  background-image:url(./image/girls_workout/4.jpg);
+}
+.img9{
+  background-image:url(./image/girls_workout/5.jpg);
+}
+.txtwo{
+  display: flex;
+  justify-content: space-around;
+}
+.t1, .t2, .t3{
+  margin-left: 0.5%;
+  border: 1px solid #26305a;
+  margin-top: 0%;
+}
+.t11, .t22, .t33{
+  margin-left:0.5%;
+  border: 1px solid #26305a;
+  margin-top:-1%;
+}
+.t111, .t222, .t333{
+  margin-left: 0.5%;
+  border: 1px solid #26305a;
+  margin-bottom:0%;
+}
+.t1, .t2, .t3, .t11, .t22, .t33, .t111, .t222, .t333{
+  width: 28%;
+  color:#26305a;
+  background-color:  #f2f2f2ee;
+  text-align: center;
+  height: 20vh;
+  font-size: 17px;
+  padding-top: 1.5%;
+  text-decoration: none;
+}
+.t1:hover, .t2:hover, .t3:hover, .t11:hover, .t22:hover, .t33:hover, .t111:hover, .t222:hover, .t333:hover{
+  color:#26305a;
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.2s;
+  /* text-shadow: 0px 0px 0px #F3EFE0; */
+  /* box-shadow: 0 -2px 0px white inset; */
+}
+
+
+/* Yoga */
+.img1yg, .img4yg, .img7yg {
+  margin-left: 0.5%;
+}
+.img2yg, .img5yg, .img8yg {
+  margin-left: 0.5%;
+}
+.img3yg, .img6yg, .img9yg {
+  margin-left: 0.5%;
+}
+.img1yg, .img2yg, .img3yg{
+  margin-top: 2%;
+}
+.img4yg, .img5yg, .img6yg{
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.img7yg, .img8yg, .img9yg{
+  margin-top:2%;
+  margin-bottom: 2%;
+}
+.two2{
+  width: 100%;
+  height: 100vh; 
+  text-align: center;
+  border: 1px solid #ccc; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-image: url(./image/yoga/bannerpic.jpg);
+}
+.img1yg{
+  background-image:url(./image/yoga/1.png);
+}
+.img2yg{
+  background-image:url(./image/yoga/2.png);
+}
+.img3yg{
+  background-image:url(./image/yoga/3.png);
+}
+.img4yg{
+  background-image:url(./image/yoga/4.png);
+}
+.img5yg{
+  background-image:url(./image/yoga/5.png);
+}
+.img6yg{
+  background-image:url(./image/yoga/6.png);
+}
+.img7yg{
+  background-image:url(./image/yoga/7.png);
+}
+.img8yg{
+  background-image:url(./image/yoga/8.png);
+}
+.img9yg{
+  background-image:url(./image/yoga/9.png);
+}
+.t111yg, .t222yg, .t333yg{
+  margin-left: 0.5%;
+  border: 1px solid #26305a;
+  margin-top:-2%;
+  margin-bottom:0%;
+}
+.t111yg, .t222yg, .t333yg{
+  width: 28%;
+  color:#26305a;
+  background-color:  #f2f2f2ee;
+  text-align: center;
+  height: 20vh;
+  font-size: 17px;
+  padding-top: 1.5%;
+  text-decoration: none;
+}
+.t111yg:hover, .t222yg:hover, .t333yg:hover{
+  color:#26305a;
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.2s;
+  /* text-shadow: 0px 0px 0px #F3EFE0; */
+  /* box-shadow: 0 -2px 0px white inset; */
+}
+
+/* Wellness */
+.three3{ 
+  width: 100%;
+  height: 100vh; 
+  text-align: center;
+  border: 1px solid #ccc; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  background-image:url(./image/wellness/bannerpic.jpg);
+}
+.div2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img1well{
+  background-image:url(./image/wellness/1.png);
+}
+.img2well{
+  background-image:url(image/wellness/2.png);
+}
+.img3well{
+  background-image:url(image/wellness/3.png);
+}
+.img4well{
+  background-image:url(image/wellness/4.png);
+}
+.img5well{
+  background-image:url(image/wellness/5.png);
+}
+.img6well{
+  background-image:url(image/wellness/6.png);
+}
+.img7well{
+  background-image:url(image/wellness/7.png);
+}
+.img8well{
+  background-image:url(image/wellness/8.png);
+}
+.img9well{
+  background-image:url(image/wellness/9.png);
+} 
+.img1well, .img4well, .img7well{
+  margin-left: 0.5%;
+}
+.img2well, .img5well, .img8well{
+  margin-left: 0.5%;
+}
+.img3well, .img6well, .img9well{
+  margin-left: 0.5%;
+}
+.img1well, .img2well, .img3well{
+  margin-top: 4%;
+}
+.img4well, .img5well, .img6well{
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.img7well, .img8well, .img9well{
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+/* Recipes */
+.four4{
+  background-image:url(./image/recipes/bannerpic.jpg);
+  width: 100%;
+  height: 100vh; 
+  text-align: center;
+  border: 1px solid #ccc; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+.div2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+}
+.img1recipes{
+  background-image:url(./image/recipes/1.jpg);
+}
+.img2recipes{
+  background-image:url(./image/recipes/2.jpg);
+}
+.img3recipes{
+  background-image:url(./image/recipes/3.jpg);
+}
+.img4recipes{
+  background-image:url(./image/recipes/4.jpg);
+}
+.img5recipes{
+  background-image:url(./image/recipes/5.jpg);
+}
+.img6recipes{
+  background-image:url(./image/recipes/6.jpg);
+}
+.img7recipes{
+  background-image:url(./image/recipes/7.jpg);
+}
+.img8recipes{
+  background-image:url(./image/recipes/8.jpg);
+}
+.img9recipes{
+  background-image:url(./image/recipes/9.jpg);
+}
+.img1recipes, .img4recipes, .img7recipes{
+  margin-left:0.5%;
+}
+.img2recipes, .img5recipes, .img8recipes{
+  margin-left:0.5%;
+}
+.img3recipes, .img6recipes, .img9recipes{
+  margin-left:0.5%;
+}
+.img1recipes, .img2recipes, .img3recipes{
+  margin-top:4%;
+}
+.img4recipes, .img5recipes, .img6recipes{
+  margin-top:2%;
+  margin-bottom:1%;
+}
+.img7recipes, .img8recipes, .img9recipes{
+  margin-top:2%;
+  margin-bottom:0%;
+}
+.txtdiet1, .txtdiet2, .txtdiet3, .txtdiet4, .txtdiet5, .txtdiet6, .txtdiet7, .txtdiet8, .txtdiet9{
+  width:28%;
+  height:8vh; 
+  text-align: center;
+  border: 1px solid black;
+  background-size: cover;
+  padding-top:1%;
+  text-decoration:none;
+  color:#26305a;
+  background-color:  #f2f2f2ee;
+}
+.txtdiet1:hover , .txtdiet2:hover, .txtdiet3:hover , .txtdiet4:hover , .txtdiet5:hover , .txtdiet6:hover , .txtdiet7:hover , .txtdiet8:hover , .txtdiet9:hover{
+  text-decoration: underline;
+}
+.txtdiet1, .txtdiet2, .txtdiet3{
+  margin-left:0.5%;
+  border: 1px solid #26305a;
+  margin-top: 0%;
+  
+}
+.txtdiet4, .txtdiet5, .txtdiet6{
+  margin-left:0.5%;
+  border: 1px solid #26305a;
+  margin-top:-1%;
+}
+.txtdiet7, .txtdiet8, .txtdiet9{
+  margin-left: 0.5%;
+  border: 1px solid #26305a;
+  margin-bottom:0%;
+  /* margin-top:-0.8%; */
+}
+.txtdiet8{
+  background-position: right top;
+}
+.learn{
+  color:white;
+  margin-top:3%;
+}
+
+/* diet pages */
+.recipesdetail1{
+  width:70%;
+  background-image:url(./image/recipes/1.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail2{
+  width:70%;
+  background-image:url(./image/recipes/2.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail3{
+  width:70%;
+  background-image:url(./image/recipes/3.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail4{
+  width:70%;
+  background-image:url(./image/recipes/4.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail5{
+  width:70%;
+  background-image:url(./image/recipes/5.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail6{
+  width:70%;
+  background-image:url(./image/recipes/6.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail7{
+  width:70%;
+  background-image:url(./image/recipes/7.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail8{
+  width:70%;
+  background-image:url(./image/recipes/8.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.recipesdetail9{
+  width:70%;
+  background-image:url(./image/recipes/9.jpg);
+  height:110vh;
+  background-size:cover;
+  margin:10% 15% 6% 15%;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.name{
+  margin-left:25%;
+  width:50%;
+  height:8vh;
+  text-align: center;
+  font-size:25px;
+  margin-bottom:6%;
+  background-color:#26305a;
+  color:#ffffff;
+  padding-top:1%;
+}
+.detailcontainer{
+  display:flex;
+  justify-content:space-around;
+}
+.ingredient, .steps{
+  border:1px solid black;
+  width:45%;
+  height:65vh;
+  padding:4% 4%;
+  margin-bottom: 5%;
+  font-size:17px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+.steps{
+  padding:5% 3%;
+}
+.ingredient b{
+  font-size:22px;
+  color: #26305a;
+  text-transform: uppercase;
+}
+.ingredient ul{
+  list-style-type:circle;
+}
+.steps b{
+  font-size:22px;
+  text-transform: uppercase;
+}
+.steps ol{
+  list-style-type: upper-roman;
+}
+.ingredient2, .steps2{
+  border:1px solid black;
+  width:45%;
+  height:52vh;
+  padding:4% 4%;
+  margin-bottom:3%;
+  font-size:17px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+.ingredient2 b{
+  font-size:22px;
+  color: #26305a;
+  text-transform: uppercase;
+}
+.ingredient2 ul{
+  list-style-type:circle;
+}
+.steps2 b{
+  font-size:22px;
+  text-transform: uppercase;
+}
+.steps2 ol{
+  list-style-type: upper-roman;
+}
+.ingredient4, .steps4{
+  border:1px solid black;
+  width:45%;
+  height:72vh;
+  padding:4% 4%;
+  margin-bottom:3%;
+  font-size:17px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+.ingredient4 b{
+  font-size:22px;
+  color: #26305a;
+  text-transform: uppercase;
+}
+.ingredient4 ul{
+  list-style-type:circle;
+}
+.steps4 b{
+  font-size:22px;
+  text-transform: uppercase;
+}
+.steps4 ol{
+  list-style-type: upper-roman;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Workout responsive */
+/* @media all and (max-width:1200px){
+  .container{
+    flex-wrap:wrap;
+    display:block;
+  }
+  .img1, .img2, .img3, .img4{
+    width:40%;
+    margin-left:2.5%;
+  }
+}
+@media all and (max-width:600px){
+  .div2{
+    flex-wrap:wrap;
+    display:block;
+  }
+  .img1, .img2, .img3, .img4{
+    width:90%;
+    margin-left:2.5%;
+  }
+}
+/* section */
+/* @media all and (max-width:900px){
+  .vd{
+    flex-wrap:wrap;
+    display:block;
+  }
+  .wo, .yg, .well, .diet{
+    width: 95%;
+    margin-left:2.5%;
+  } */ 
+  /* .yg{
+    width:95%;
+    margin-left:2.5%;
+  }
+  .well{
+    width:95%;
+    margin-left:2.5%;
+}
+  .diet{
+  width: 95%;
+  margin-left:2.5%;
+} */
+/* .cap1, .cap2, .cap3, .cap4{
+  font-size: 20px;
+  text-align: center;
+}
+
+.cap, .capp, .cappp, .capppp{
+  font-size: 15px;
+  text-align: center;
+ margin-top: auto;
+ padding-top: 1.5%;
+} */
+/* } */
+
+/* @media all and (max-width:800px){
+  /* navsection hide
+  hamberg 
+  h:hover navs show */
+  /* .logonb{
+    margin-top: -3%;
+  }
+  .navlist{
+    float: none;
+    width: 100%;
+  }
+  .workout,.healthy{
+    display:block;
+    width:100%;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style:none;
+    font-size: 20px;
+  }
+  .abspace{
+    padding-bottom: 2%;
+  }
+  .fb{
+    flex-wrap:wrap;
+    /* flex-direction: column; */
+  /* }
+  }  */
+    
+
+
+  
